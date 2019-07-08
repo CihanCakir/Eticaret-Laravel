@@ -69,3 +69,13 @@
         </div>
     </div>
 @endsection
+@section('footer')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
+    <script>
+        $('.kredikarti').mask('0000-0000-0000-0000', { placeholder: "____-____-____-____" });
+        $('.kredikarti_cvv').mask('000', { placeholder: "___" });
+        $('.telefon').mask('(000) 000-00-00', { placeholder: "(___) ___-__-__" });
+    </script>
+@endsection
